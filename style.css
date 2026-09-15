@@ -1,172 +1,190 @@
 * {
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  background: #080b18;
-  color: #f7f3f5;
-  font-family: "DM Sans", sans-serif;
+    background: #0d0b12;
+    color: #f7f1f5;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 22px;
+    position: relative;
+}
+
+.content {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
 }
 
 .hero {
-  min-height: 100vh;
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 40px 20px;
-  background:
-    radial-gradient(circle at 50% 25%, rgba(148, 124, 190, .18), transparent 30%),
-    linear-gradient(180deg, #0b0f22 0%, #090b18 100%);
+    background:
+        radial-gradient(circle at 50% 35%, #241d2d 0%, #0d0b12 55%);
 }
 
-.stars {
-  position: absolute;
-  inset: 0;
-  opacity: .7;
-  background-image:
-    radial-gradient(circle, rgba(255,255,255,.8) 1px, transparent 1px),
-    radial-gradient(circle, rgba(255,255,255,.45) 1px, transparent 1px);
-  background-size: 95px 95px, 145px 145px;
-  background-position: 15px 20px, 50px 70px;
-}
-
-.moon {
-  position: relative;
-  z-index: 1;
-  font-size: 58px;
-  margin-bottom: 12px;
-  color: #eee6ff;
-  animation: float 4s ease-in-out infinite;
-}
-
-.cats {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  gap: 8px;
-  font-size: 28px;
-  margin-bottom: 24px;
-}
-
-.cats span:last-child {
-  transform: translateY(7px);
-}
-
-.eyebrow {
-  position: relative;
-  z-index: 1;
-  margin: 0 0 14px;
-  font-size: 12px;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  opacity: .7;
+.tiny {
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    opacity: 0.65;
+    margin-bottom: 25px;
 }
 
 h1 {
-  position: relative;
-  z-index: 1;
-  margin: 0;
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(48px, 14vw, 92px);
-  line-height: .82;
-  font-weight: 500;
-  letter-spacing: 3px;
+    font-size: clamp(45px, 9vw, 90px);
+    line-height: 1.05;
+    font-weight: normal;
+    margin-bottom: 30px;
 }
 
-h1 span {
-  font-size: .58em;
-  letter-spacing: 6px;
+h2 {
+    font-size: clamp(32px, 6vw, 55px);
+    font-weight: normal;
+    line-height: 1.2;
 }
 
 .subtitle {
-  position: relative;
-  z-index: 1;
-  margin: 30px 0 22px;
-  line-height: 1.7;
-  opacity: .78;
-}
-
-.quote {
-  position: relative;
-  z-index: 1;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 20px;
-  line-height: 1.35;
-  font-style: italic;
-  opacity: .9;
-}
-
-.button {
-  position: relative;
-  z-index: 1;
-  display: inline-block;
-  margin-top: 30px;
-  padding: 13px 24px;
-  border: 1px solid rgba(255,255,255,.35);
-  border-radius: 999px;
-  color: #fff;
-  text-decoration: none;
-  background: rgba(255,255,255,.06);
-  transition: transform .25s ease, background .25s ease;
-}
-
-.button:hover {
-  transform: translateY(-3px);
-  background: rgba(255,255,255,.12);
-}
-
-.footer-note {
-  position: absolute;
-  z-index: 1;
-  bottom: 22px;
-  margin: 0;
-  font-size: 11px;
-  opacity: .45;
-}
-
-.next {
-  min-height: 35vh;
-  display: grid;
-  place-items: center;
-  padding: 50px 20px;
-  text-align: center;
-  background: #0d1021;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 25px;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-7px); }
-}
-
-@media (max-width: 480px) {
-  
-  .quote {
-    
     font-size: 18px;
-  }
-
-  .subtitle {
-    font-size: 14px;
-  }
+    line-height: 1.8;
+    opacity: 0.78;
+    margin-bottom: 40px;
 }
-.scroll-note {
-  position: relative;
-  z-index: 1;
-  margin-top: 30px;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 17px;
-  font-style: italic;
-  opacity: .55;
-  letter-spacing: .5px;
+
+button {
+    background: transparent;
+    color: #f7f1f5;
+    border: 1px solid rgba(255,255,255,0.35);
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: rgba(255,255,255,0.1);
+    transform: translateY(-2px);
+}
+
+.letter-section {
+    background: #110e16;
+    align-items: flex-start;
+}
+
+.letter {
+    max-width: 760px;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.letter > .tiny {
+    text-align: center;
+}
+
+.letter > h2 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.letter p {
+    font-size: 17px;
+    line-height: 1.9;
+    margin-bottom: 28px;
+    color: #eee7ed;
+}
+
+.letter .special {
+    text-align: center;
+    font-size: 21px;
+    line-height: 1.7;
+    margin: 45px 0;
+}
+
+.ending {
+    text-align: center;
+    margin-top: 70px;
+    padding-top: 50px;
+    border-top: 1px solid rgba(255,255,255,0.12);
+}
+
+.ending h2 {
+    margin-bottom: 30px;
+}
+
+.ending h3 {
+    font-size: 22px;
+    font-weight: normal;
+    margin: 45px 0;
+}
+
+.ending .signature {
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.letter > button {
+    display: block;
+    margin: 60px auto 0;
+}
+
+.countdown-section {
+    background:
+        radial-gradient(circle at 50% 50%, #211a29 0%, #0d0b12 65%);
+    text-align: center;
+}
+
+.countdown-section h2 {
+    margin-bottom: 25px;
+}
+
+.coming-soon {
+    margin: 50px auto;
+    padding: 35px;
+    max-width: 300px;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 20px;
+}
+
+.coming-soon span {
+    display: block;
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+
+.coming-soon p {
+    opacity: 0.7;
+}
+
+.small {
+    font-size: 13px;
+    letter-spacing: 2px;
+    opacity: 0.5;
+}
+
+@media (max-width: 600px) {
+    .section {
+        padding: 45px 20px;
+    }
+
+    .letter p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .letter {
+        padding: 20px 0;
+    }
 }
