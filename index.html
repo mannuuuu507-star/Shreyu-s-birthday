@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>For Shreyansh ♡</title>
+  <title>Happy Birthday, Shreyansh ♡</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
 </head>
@@ -17,21 +17,787 @@
 <body>
 
   <!-- BACKGROUND -->
-  <div class="stars"></div>
-  <div class="moon"></div>
+  <div class="sky"></div>
+  <div class="particles"></div>
 
-  <div class="floating-heart heart1">♡</div>
-  <div class="floating-heart heart2">♡</div>
-  <div class="floating-heart heart3">✦</div>
-  <div class="floating-heart heart4">♡</div>
+  <!-- TOP NAVIGATION -->
+  <header class="topbar">
 
-  <!-- NAVIGATION -->
-  <header class="navbar">
-
-    <div class="logo">for shreyu ♡</div>
+    <button class="logo" data-go="home">
+      ✦ ♡ ☾
+    </button>
 
     <nav>
       <button data-go="home">HOME</button>
-      <button data-go="countdown">30 DAYS</button>
+      <button data-go="countdown">COUNTDOWN</button>
       <button data-go="memories">MEMORIES</button>
-      <button data-go="letter
+      <button data-go="letter">LETTER</button>
+      <button data-go="chats">CHATS</button>
+      <button data-go="kittens">KITTENS</button>
+      <button data-go="birthday">BIRTHDAY</button>
+    </nav>
+
+    <button id="music" class="music">
+      ● ♪
+    </button>
+
+  </header>
+
+
+  <!-- ================= HOME ================= -->
+
+  <section class="screen" id="home">
+
+    <div class="decor moon1">☾</div>
+    <div class="decor moon2">☽</div>
+
+    <div class="cat corner">
+      ฅ^•ﻌ•^ฅ
+    </div>
+
+    <div class="hero">
+
+      <div class="tiny">
+        A LITTLE CORNER OF THE INTERNET, MADE JUST FOR YOU
+      </div>
+
+      <h1>
+        Happy Birthday
+      </h1>
+
+      <div class="name">
+        Shreyansh ♡
+      </div>
+
+      <div class="rule">
+        ✦ ───────── ♡ ───────── ✦
+      </div>
+
+      <p class="tag">
+        you are the poem I never knew I could write
+      </p>
+
+      <p class="date">
+        Your special day • a little universe for you
+      </p>
+
+    </div>
+
+
+    <div class="scroll">
+      SCROLL DOWN
+      <span>⌄</span>
+    </div>
+
+
+    <!-- HOME CARDS -->
+
+    <div class="menu-grid">
+
+      <button class="glass-card" data-go="countdown">
+
+        <b>⏳</b>
+
+        <strong>
+          The Countdown
+        </strong>
+
+        <small>
+          EVERY DAY LEADING TO YOUR SPECIAL DAY
+        </small>
+
+        <i>→</i>
+
+      </button>
+
+
+      <button class="glass-card" data-go="memories">
+
+        <b>📷</b>
+
+        <strong>
+          Little Memories
+        </strong>
+
+        <small>
+          OUR MOMENTS, TOLD THROUGH PHOTOGRAPHS
+        </small>
+
+        <i>→</i>
+
+      </button>
+
+
+      <button class="glass-card" data-go="letter">
+
+        <b>💌</b>
+
+        <strong>
+          A Little Letter
+        </strong>
+
+        <small>
+          EVERYTHING I WANTED TO SAY
+        </small>
+
+        <i>→</i>
+
+      </button>
+
+
+      <button class="glass-card" data-go="chats">
+
+        <b>💬</b>
+
+        <strong>
+          Our Chats
+        </strong>
+
+        <small>
+          EVERY WORD, EVERY SILLY MOMENT
+        </small>
+
+        <i>→</i>
+
+      </button>
+
+
+      <button class="glass-card" data-go="kittens">
+
+        <b>🐾</b>
+
+        <strong>
+          Cat Corner
+        </strong>
+
+        <small>
+          A LITTLE PLACE FOR THE CAT LOVER
+        </small>
+
+        <i>→</i>
+
+      </button>
+
+
+      <button class="glass-card" data-go="birthday">
+
+        <b>🎂</b>
+
+        <strong>
+          Birthday Wishes
+        </strong>
+
+        <small>
+          CAKE, CANDLES & A FINAL SURPRISE
+        </small>
+
+        <i>→</i>
+
+      </button>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ================= COUNTDOWN ================= -->
+
+  <section class="screen" id="countdown">
+
+    <section class="heading">
+
+      <div class="tiny">
+        EVERY DAY A LITTLE CLOSER
+      </div>
+
+      <h2>
+        The <em>Countdown</em>
+      </h2>
+
+      <p>
+        Thirty tiny moments before the big day.
+      </p>
+
+    </section>
+
+    <div class="days" id="days"></div>
+
+  </section>
+
+
+
+  <!-- ================= MEMORIES ================= -->
+
+  <section class="screen" id="memories">
+
+    <section class="heading">
+
+      <div class="tiny">
+        MOMENTS WE KEEP
+      </div>
+
+      <h2>
+        Little <em>Memories</em>
+      </h2>
+
+      <p>
+        Replace these with your own photos and captions.
+      </p>
+
+    </section>
+
+
+    <div class="cards photos">
+
+      <article>
+
+        <div class="photo">
+          ♡
+        </div>
+
+        <h3>
+          A favourite moment
+        </h3>
+
+        <p>
+          Add a photo and a tiny caption here.
+        </p>
+
+      </article>
+
+
+      <article>
+
+        <div class="photo">
+          ✦
+        </div>
+
+        <h3>
+          A day to remember
+        </h3>
+
+        <p>
+          Add another memory here.
+        </p>
+
+      </article>
+
+
+      <article>
+
+        <div class="photo">
+          ☾
+        </div>
+
+        <h3>
+          A little memory
+        </h3>
+
+        <p>
+          Something you never want to forget.
+        </p>
+
+      </article>
+
+
+      <article>
+
+        <div class="photo">
+          📷
+        </div>
+
+        <h3>
+          One more
+        </h3>
+
+        <p>
+          Because there can never be enough.
+        </p>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ================= LETTER ================= -->
+
+  <section class="screen" id="letter">
+
+    <section class="heading">
+
+      <div class="tiny">
+        WORDS I WANTED YOU TO HAVE
+      </div>
+
+      <h2>
+        A Little Letter
+        <em>for Shreyansh</em>
+      </h2>
+
+    </section>
+
+
+    <article class="letter">
+
+      <div class="label">
+        FOR MY SHREYU
+      </div>
+
+
+      <p>
+        <b>Shreyu, my one and only safe place.</b>
+      </p>
+
+
+      <p>
+        I can literally write a lot for you—when I say a lot, I mean
+        <i>a lot</i>.
+      </p>
+
+
+      <p>
+        Your arrival in my life was so unexpected, almost like God himself
+        sent me you. I never expected to find love, and little did I know
+        that you would become so important to me from the very beginning.
+      </p>
+
+
+      <p>
+        I don't know how, but I just kept falling for you more and more
+        after we got into a relationship.
+      </p>
+
+
+      <p>
+        I became someone I wanted to be.<br>
+        A yapper who finally had someone who listened to me, and someone
+        I wanted to talk to as much as I could.
+      </p>
+
+
+      <p>
+        Love, I'm so lucky to have you in my life. You are one of the most
+        precious and prettiest parts of my life.
+      </p>
+
+
+      <p>
+        You met me at a point when I didn't even want to meet someone,
+        but somehow, we still found each other.
+      </p>
+
+
+      <p>
+        You are that little shine without which I feel like I can't shine
+        the same way. You are the person I look for early in the morning.
+        I check my phone repeatedly, and somehow, you find your way into
+        almost every thought—and obviously, into my heart.
+      </p>
+
+
+      <p>
+        <b>Thank you for loving me the way you do.</b><br>
+        And you are the best, Shreyansh. 🤍
+      </p>
+
+
+      <p>
+        Sometimes I wonder what my life would look like if I had never
+        met you.
+      </p>
+
+
+      <p>
+        You make me happy—so happieeee 😭—like my inner child keeps showing
+        up whenever I'm with you.
+      </p>
+
+
+      <p>
+        I have become a babyyy who literally wants to tell you everything.
+        And the way you talk to me in your babyy-babyy language is honestly
+        one of the best things ever. 😭❤️
+      </p>
+
+
+      <p>
+        I just love every single thing about you, every little thing,
+        Shrey. 😭❤️
+      </p>
+
+
+      <p>
+        From the childish Shreyu to the mature Shreyu, every version of you
+        is alive in my heart.
+      </p>
+
+
+      <p>
+        I just wannaaa live those dreams with you.<br>
+        I just wanna be with you in every single life.<br>
+        May we find each other in every single universe. 🌙
+      </p>
+
+
+      <p>
+        I hope God keeps us like this always—<br>
+        a little mature and a little childish,<br>
+        a little understanding and a little clumsy. ❤️😭🥺
+      </p>
+
+
+      <p>
+        And may He heal every little fight between us and always bring us
+        back to understanding each other.
+      </p>
+
+
+      <p>
+        <b>Thank you for being you.</b>
+      </p>
+
+
+      <p>
+        For being my Shreyanshh, my Shrey, my listener, my boyyyy,
+        my little babygirllll, and my soulmate. ❤️
+      </p>
+
+
+      <p>
+        Thank you for coming into my life. I love you more than you could
+        ever imagine.
+      </p>
+
+
+      <p>
+        Thank you for treating me the way you do, for being the way you are—
+        so soft, so gentle, so mineeee. 😭❤️
+      </p>
+
+
+      <p>
+        I love you. 😭❤️
+      </p>
+
+
+      <hr>
+
+
+      <p>
+        A genuine wish—not just for this year, but for every year of your life.
+      </p>
+
+
+      <p>
+        May God always keep you happy, make you stronger, and let you stay
+        a little childish too. Because I love you so, so, so much that I
+        just want to see you as a happy child—the happiest child in the world.
+        😭❤️
+      </p>
+
+
+      <p>
+        And when it comes to maturity, you are mature enough, and I genuinely
+        love how mature you are. Thank you for being the way you are.
+      </p>
+
+
+      <p>
+        I guess with age, some things change, and if there's one thing I want
+        to remain the same in you, it's the way you are childish with me.
+      </p>
+
+
+      <p>
+        I want to see us after many, many years, still the same way we are now.
+        ❤️
+      </p>
+
+
+      <p>
+        May success always find you. May you reach heights you never even
+        imagined. May all your dreams come true.
+      </p>
+
+
+      <p>
+        And most importantly, may you always be happy, because your happiness
+        matters to me more than you know.
+      </p>
+
+
+      <p>
+        Your laugh means a lot to me. So, to keep you happy, I'm always here.
+        Always. I just want to see you as the happiest man in the world.
+        🫂❤️
+      </p>
+
+
+      <p>
+        May God always protect you, protect you from every evil eye, and
+        always give you the strength and wisdom to handle even the hardest
+        situations in life. 🌙
+      </p>
+
+
+      <p>
+        And there's one thing I want you to remember whenever you read this:
+      </p>
+
+
+      <p class="highlight">
+        There will always be one person in your life who is with you—me,
+        your Muskan.
+      </p>
+
+
+      <p>
+        There may be situations in the future where we won't be able to talk.
+        I don't know what the future holds, but I know that you will always
+        have a place in my heart, and I will always keep praying for good
+        things for you.
+      </p>
+
+
+      <p>
+        So just keep this in mind—
+      </p>
+
+
+      <p class="highlight">
+        Your Muskan is always with you.
+      </p>
+
+
+      <p>
+        Physically or from far away, I'll always be here, cheering for you,
+        praying for you, and wishing the very best for you. ❤️🫂
+      </p>
+
+
+      <p class="highlight">
+        HAPPIEST BIRTHDAY, MY SHREYU! ❤️🫂
+      </p>
+
+
+      <p>
+        To someone very special to me—always be the way you are.
+      </p>
+
+
+      <p>
+        May Almighty always protect you.<br>
+        You deserve everything beautiful, and I would never leave a chance
+        to remind you of that. 🌷🌙
+      </p>
+
+
+      <p class="highlight">
+        I LOVE YOUUU, MERI JAAN. ❤️🥺
+      </p>
+
+
+      <p class="highlight">
+        HAPPIEST BIRTHDAY, ANSHH! ❤️
+      </p>
+
+
+      <p class="sign">
+        ~ Yours, Muku ❤️
+      </p>
+
+    </article>
+
+  </section>
+
+
+
+  <!-- ================= CHATS ================= -->
+
+  <section class="screen" id="chats">
+
+    <section class="heading">
+
+      <div class="tiny">
+        THE SILLY LITTLE THINGS
+      </div>
+
+      <h2>
+        Our <em>Chats</em>
+      </h2>
+
+      <p>
+        A little place for screenshots and favourite messages.
+      </p>
+
+    </section>
+
+
+    <div class="chatbox">
+
+      <div>
+        💬
+        <b>Favourite chat</b>
+        <span>Add a screenshot here.</span>
+      </div>
+
+      <div>
+        ♡
+        <b>Funniest moment</b>
+        <span>Write the context here.</span>
+      </div>
+
+      <div>
+        ✦
+        <b>A message to keep</b>
+        <span>Something worth remembering.</span>
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ================= KITTENS ================= -->
+
+  <section class="screen" id="kittens">
+
+    <section class="heading">
+
+      <div class="tiny">
+        FOR MY FAVOURITE CAT LOVER
+      </div>
+
+      <h2>
+        For You,
+        <em>Cat Lover</em> 🐾
+      </h2>
+
+      <p>
+        Because cats deserve their own little page.
+      </p>
+
+    </section>
+
+
+    <div class="cards kittens">
+
+      <article>
+
+        <div class="kitty">
+          🐈
+        </div>
+
+        <h3>
+          Sleepy Shonu
+        </h3>
+
+        <p>
+          Soft, sleepy and absolutely unbothered.
+        </p>
+
+      </article>
+
+
+      <article>
+
+        <div class="kitty">
+          🐈‍⬛
+        </div>
+
+        <h3>
+          Midnight Kitty
+        </h3>
+
+        <p>
+          Made for moonlit nights.
+        </p>
+
+      </article>
+
+
+      <article>
+
+        <div class="kitty">
+          😺
+        </div>
+
+        <h3>
+          Happy Kitty
+        </h3>
+
+        <p>
+          Zero thoughts. Maximum cuteness.
+        </p>
+
+      </article>
+
+
+      <article>
+
+        <div class="kitty">
+          🐾
+        </div>
+
+        <h3>
+          Tiny Paw Club
+        </h3>
+
+        <p>
+          Officially approved by the cats.
+        </p>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- ================= BIRTHDAY ================= -->
+
+  <section class="screen birthday" id="birthday">
+
+    <div class="tiny">
+      THE LAST PAGE ✦
+    </div>
+
+    <h2>
+      HAPPIEST BIRTHDAY
+    </h2>
+
+    <div class="final-name">
+      Shreyansh ♡
+    </div>
+
+    <p>
+      May this new year of your life bring you happiness, strength,
+      success, beautiful memories and countless reasons to smile.
+    </p>
+
+    <div class="cake">
+      🎂
+    </div>
+
+    <button id="wish" class="wish">
+      MAKE A WISH ✨
+    </button>
+
+    <div id="wishText"></div>
+
+  </section>
+
+
+
+  <!-- JAVASCRIPT -->
+
+  <script src="script.js"></script>
+
+</body>
+    </html>
