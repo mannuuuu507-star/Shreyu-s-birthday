@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #080b18;
+  color: #f7f3f5;
+  font-family: "DM Sans", sans-serif;
+}
+
+.hero {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  background:
+    radial-gradient(circle at 50% 25%, rgba(148, 124, 190, .18), transparent 30%),
+    linear-gradient(180deg, #0b0f22 0%, #090b18 100%);
+}
+
+.stars {
+  position: absolute;
+  inset: 0;
+  opacity: .7;
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,.8) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255,255,255,.45) 1px, transparent 1px);
+  background-size: 95px 95px, 145px 145px;
+  background-position: 15px 20px, 50px 70px;
+}
+
+.moon {
+  position: relative;
+  z-index: 1;
+  font-size: 58px;
+  margin-bottom: 12px;
+  color: #eee6ff;
+  animation: float 4s ease-in-out infinite;
+}
+
+.cats {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  gap: 8px;
+  font-size: 28px;
+  margin-bottom: 24px;
+}
+
+.cats span:last-child {
+  transform: translateY(7px);
+}
+
+.eyebrow {
+  position: relative;
+  z-index: 1;
+  margin: 0 0 14px;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: .7;
+}
+
+h1 {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(48px, 14vw, 92px);
+  line-height: .82;
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+
+h1 span {
+  font-size: .58em;
+  letter-spacing: 6px;
+}
+
+.subtitle {
+  position: relative;
+  z-index: 1;
+  margin: 30px 0 22px;
+  line-height: 1.7;
+  opacity: .78;
+}
+
+.quote {
+  position: relative;
+  z-index: 1;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 20px;
+  line-height: 1.35;
+  font-style: italic;
+  opacity: .9;
+}
+
+.button {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 13px 24px;
+  border: 1px solid rgba(255,255,255,.35);
+  border-radius: 999px;
+  color: #fff;
+  text-decoration: none;
+  background: rgba(255,255,255,.06);
+  transition: transform .25s ease, background .25s ease;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  background: rgba(255,255,255,.12);
+}
+
+.footer-note {
+  position: absolute;
+  z-index: 1;
+  bottom: 22px;
+  margin: 0;
+  font-size: 11px;
+  opacity: .45;
+}
+
+.next {
+  min-height: 35vh;
+  display: grid;
+  place-items: center;
+  padding: 50px 20px;
+  text-align: center;
+  background: #0d1021;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 25px;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-7px); }
+}
+
+@media (max-width: 480px) {
+  .quote {
+    font-size: 18px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}
