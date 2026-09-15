@@ -150,11 +150,23 @@ h1 span {
 }
 
 @media (max-width: 480px) {
+  
   .quote {
+    
     font-size: 18px;
   }
 
   .subtitle {
     font-size: 14px;
   }
+}
+.scroll-note {
+  position: relative;
+  z-index: 1;
+  margin-top: 30px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 17px;
+  font-style: italic;
+  opacity: .55;
+  letter-spacing: .5px;
 }
