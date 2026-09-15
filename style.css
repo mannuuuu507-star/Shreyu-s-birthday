@@ -1,190 +1,39 @@
+/* =========================================
+   GLOBAL
+========================================= */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background: #0d0b12;
-    color: #f7f1f5;
-    font-family: Georgia, "Times New Roman", serif;
+  background:
+    radial-gradient(circle at 50% 0%, #252044 0%, #0d0c18 42%, #07070d 100%);
+  color: #eeeaf7;
+  font-family: "DM Sans", sans-serif;
+  overflow-x: hidden;
 }
 
-.section {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 22px;
-    position: relative;
-}
 
-.content {
-    text-align: center;
-    max-width: 800px;
-    width: 100%;
-}
+/* =========================================
+   STAR BACKGROUND
+========================================= */
 
-.hero {
-    background:
-        radial-gradient(circle at 50% 35%, #241d2d 0%, #0d0b12 55%);
-}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -5;
 
-.tiny {
-    font-size: 12px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    opacity: 0.65;
-    margin-bottom: 25px;
-}
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,.8) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255,255,255,.4) 1px, transparent 1px);
 
-h1 {
-    font-size: clamp(45px, 9vw, 90px);
-    line-height: 1.05;
-    font-weight: normal;
-    margin-bottom: 30px;
-}
-
-h2 {
-    font-size: clamp(32px, 6vw, 55px);
-    font-weight: normal;
-    line-height: 1.2;
-}
-
-.subtitle {
-    font-size: 18px;
-    line-height: 1.8;
-    opacity: 0.78;
-    margin-bottom: 40px;
-}
-
-button {
-    background: transparent;
-    color: #f7f1f5;
-    border: 1px solid rgba(255,255,255,0.35);
-    padding: 14px 25px;
-    border-radius: 30px;
-    font-family: inherit;
-    font-size: 14px;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-button:hover {
-    background: rgba(255,255,255,0.1);
-    transform: translateY(-2px);
-}
-
-.letter-section {
-    background: #110e16;
-    align-items: flex-start;
-}
-
-.letter {
-    max-width: 760px;
-    width: 100%;
-    padding: 40px 0;
-}
-
-.letter > .tiny {
-    text-align: center;
-}
-
-.letter > h2 {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.letter p {
-    font-size: 17px;
-    line-height: 1.9;
-    margin-bottom: 28px;
-    color: #eee7ed;
-}
-
-.letter .special {
-    text-align: center;
-    font-size: 21px;
-    line-height: 1.7;
-    margin: 45px 0;
-}
-
-.ending {
-    text-align: center;
-    margin-top: 70px;
-    padding-top: 50px;
-    border-top: 1px solid rgba(255,255,255,0.12);
-}
-
-.ending h2 {
-    margin-bottom: 30px;
-}
-
-.ending h3 {
-    font-size: 22px;
-    font-weight: normal;
-    margin: 45px 0;
-}
-
-.ending .signature {
-    margin-top: 50px;
-    font-size: 20px;
-}
-
-.letter > button {
-    display: block;
-    margin: 60px auto 0;
-}
-
-.countdown-section {
-    background:
-        radial-gradient(circle at 50% 50%, #211a29 0%, #0d0b12 65%);
-    text-align: center;
-}
-
-.countdown-section h2 {
-    margin-bottom: 25px;
-}
-
-.coming-soon {
-    margin: 50px auto;
-    padding: 35px;
-    max-width: 300px;
-    border: 1px solid rgba(255,255,255,0.15);
-    border-radius: 20px;
-}
-
-.coming-soon span {
-    display: block;
-    font-size: 65px;
-    margin-bottom: 10px;
-}
-
-.coming-soon p {
-    opacity: 0.7;
-}
-
-.small {
-    font-size: 13px;
-    letter-spacing: 2px;
-    opacity: 0.5;
-}
-
-@media (max-width: 600px) {
-    .section {
-        padding: 45px 20px;
-    }
-
-    .letter p {
-        font-size: 16px;
-        line-height: 1.8;
-    }
-
-    .letter {
-        padding: 20px 0;
-    }
-}
+  background-size: 
